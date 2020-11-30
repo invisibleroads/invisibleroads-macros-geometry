@@ -20,9 +20,9 @@ DESCRIPTION = '\n\n'.join(open(join(FOLDER, x)).read().strip() for x in [
 
 
 setup(
-    name='invisibleroads-macros-text',
-    version='1.0.3',
-    description='Shortcut functions for text operations',
+    name='invisibleroads-macros-geometry',
+    version='1.0.0',
+    description='Shortcut functions for geometry operations',
     long_description=DESCRIPTION,
     long_description_content_type='text/markdown',
     classifiers=APP_CLASSIFIERS,
@@ -30,11 +30,11 @@ setup(
     author_email='rhh@crosscompute.com',
     url=(
         'https://github.com/invisibleroads/'
-        'invisibleroads-macros-text'),
+        'invisibleroads-macros-geometry'),
     keywords='invisibleroads',
     packages=find_packages(),
     include_package_data=True,
-    zip_safe=False,
+    zip_safe=True,
     extras_require={'test': TEST_REQUIREMENTS},
     install_requires=APP_REQUIREMENTS,
     entry_points=ENTRY_POINTS)
