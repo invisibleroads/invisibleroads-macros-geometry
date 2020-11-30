@@ -13,6 +13,7 @@ APP_REQUIREMENTS = [
 TEST_REQUIREMENTS = [
     'pytest',
     'pytest-cov',
+    'shapely',
 ]
 FOLDER = dirname(abspath(__file__))
 DESCRIPTION = '\n\n'.join(open(join(FOLDER, x)).read().strip() for x in [
